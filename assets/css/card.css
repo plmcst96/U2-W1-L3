@@ -12,68 +12,145 @@ h1 {
   font-weight: 700;
 }
 
-.card {
-  color: #612406;
-  width: 90%;
-  height: 20%;
+#content-all {
   display: flex;
   flex-direction: column;
+}
+
+.card {
+  width: 96%;
+  height: 55vh;
   margin: 1em;
+  display: flex;
+  flex-direction: column;
   background-color: #faf7e3;
   border-radius: 50px;
 }
 
-h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
 .card img {
   width: 100%;
-  border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
-.text-card {
-  line-height: 0;
-  margin: 2em 1.5em 1em 1.5em;
-  text-align: center;
+.content-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-text {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  flex-grow: 1;
+  /* flex-direction: column; */
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1.3;
+  color: #612406;
+  border-radius: 50px;
+  margin-top: 1em;
 }
 
-.content-text p:nth-child(2) {
-  margin: 2em 1.2em;
+.content-card p {
+  text-align: center;
 }
 
-.card button {
-  width: 60%;
-  background-color: #f3de85;
+.content-card p:nth-child(1) {
+  font-weight: 600;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+button {
+  width: 166px;
   border: none;
+  padding: 0.6em 2.2em;
+  background-color: #f3de85;
+  border-radius: 50px;
   color: #612406;
   font-weight: 600;
-  padding: 1em;
-  margin-bottom: 1.5em;
-  border-radius: 20px;
 }
 
-@media screen and (min-width: 570px) and (max-width: 790px) {
-  .content-all {
+@media screen and (min-width: 570px) and (max-width: 800px) {
+  #content-all {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 32%;
+    height: 50%;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    margin-left: 3em;
   }
 
-  .allcard {
+  #content-all {
+    width: 66%;
     display: flex;
     flex-direction: row;
-    width: 55%%;
+    justify-content: space-around;
+    margin-left: 19em;
+  }
+
+  .card {
+    width: 30%;
+    height: 45%;
+  }
+
+  .card:nth-child(4) {
+    display: none;
+  }
+  button {
+    width: 132px;
+    font-size: 12px;
+  }
+
+  aside {
+    margin-left: 20em;
+  }
+
+  aside h2 {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    width: 23%;
+  }
+
+  .card:nth-child(4) {
+    display: flex;
+  }
+
+  .card {
+    width: 35%;
+  }
+
+  #content-all {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  nav {
+    width: 18%;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }

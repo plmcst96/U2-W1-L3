@@ -74,14 +74,25 @@ ul li:nth-child(5) {
     flex-grow: 1;
   }
 
+  ul li img {
+    padding-right: 0.7em;
+    width: 45%;
+  }
+
+  ul li {
+    font-size: 12px;
+    margin-right: 0;
+    font-weight: 600;
+  }
+
   ul li:nth-child(4) {
     order: 4;
-    padding: 1em 1.5em;
-    width: 10%;
   }
 
   ul li:nth-child(3) {
     order: 3;
+    width: 22%;
+    font-size: 20px;
   }
 
   ul li:nth-child(1) {
@@ -89,5 +100,56 @@ ul li:nth-child(5) {
   }
   ul li:nth-child(2) {
     order: 2;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+  }
+  ul li:nth-child(3) {
+    order: 1;
+    width: 45%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  ul li img {
+    padding-right: 0.7em;
+    width: 30%;
+  }
+
+  ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+
+  nav ul {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 12em;
+    flex-grow: 1;
+  }
+
+  ul li img {
+    padding-right: 0.7em;
+    width: 45%;
+  }
+  ul li:nth-child(4) {
+    order: 4;
+    padding: 2em;
+    width: 135px;
   }
 }
