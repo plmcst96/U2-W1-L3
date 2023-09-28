@@ -153,4 +153,24 @@ button {
     flex-direction: column;
     justify-content: flex-start;
   }
+
+  .article-text {
+    display: flex;
+    flex-direction: row;
+  }
+  .art {
+    display: flex;
+    order: 2;
+    flex-shrink: 5;
+  }
+
+  #art-img {
+    display: flex;
+  }
+
+  .art-image {
+    padding: initial;
+    margin-right: 25px;
+    width: 50%;
+  }
 }
